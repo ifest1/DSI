@@ -4,6 +4,8 @@ import 'package:dsi_app/register.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'forgot_password.dart';
+
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -43,11 +45,9 @@ class LoginFormState extends State<LoginForm> {
   final _formKey = GlobalKey<FormState>();
 
   void _forgotPassword() {
-    DsiDialog.showInfo(
-      context: context,
-      title: 'Warning',
-      message: '''Falta implementar esta função.\n'''
-          '''Agora é com vocês!''',
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ForgotPassword()),
     );
   }
 
