@@ -41,13 +41,7 @@ class RegisterFormState extends State<RegisterForm> {
       message: 'Seu cadastro foi realizado com sucesso.',
       buttonPressed: () => Navigator.of(context)..pop()..pop(),
     );
-
-    //A linha acima é equivalente a executar as duas linhas abaixo:
-    //Navigator.of(context).pop();
-    //Navigator.of(context).pop();
-    //
-    //Para maiores informações, leia sobre 'cascade notation' no Dart.
-    //https://dart.dev/guides/language/language-tour
+    
   }
 
   void _cancel() {
